@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" th:href="@{/css/login.css}">
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+</head >
+
+<body>
+	
+	<div>
+    	<div th:insert="base::layout"> 
+    		   
+		</div>
+        <div class="card-holder">
+            <div class="card">
+                <h3>
+                    Login
+                </h3>
+                	
+                	<div th:if="${param.error}" class="alert alert-danger">
+                		Invalid Username and Password!!
+                	</div>
+                	
+                	<div th:if="${param.logout}" class="alert alert-success">
+                		You have been successfully logged out!!
+                	</div>
+				
+                <form class='form' th:action="@{/login}" method="post">
+                	
+                	<div>
+                		<h4><a class="btn btn-lg btn-secondary fab fa-google" th:href="@{/oauth2/authorization/google}">Login With Google</a></h4>
+                		<h4><a class="btn btn-lg btn-secondary fab fa-google" th:href="@{/oauth2/authorization/facebook}">Login With Facebook</a></h4>
+                	</div>
+                	
+                    <label for="name">UserName:</label>
+                    <input type="text" th:value="${param.email}" id="username" name="username">
+
+                    <label for="Password">Password</label>
+                    <input type="password" th:placeholder="${param.otp != null ? 'Enter OTP' : 'Password'}" id="password" name="password">
+
+                    <input class="submit" type="submit" value="Login">
+                </form>
+            </div>
+        </div>
+        
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,75 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.page{
+    background-color: rgb(215 215 238);
+    height: 100vh;
+}
+
+navbar{
+    display: flex;
+    background-color: rgb(136 136 177);
+    padding: 0.6em;
+}
+
+navbar h2{
+    margin-top: 0em;
+    vertical-align: middle;
+}
+navbar .buttons{
+    margin-top: 1em;
+    margin-left: auto;
+}
+
+.btn1{
+    padding: 0.4em;
+}
+
+input{
+    width: 50%;
+    margin: 0em auto 0.5em auto;
+}
+
+body{
+	background-color: #f7f7f7;
+}
+
+.card-holder{
+    max-width: 35em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card{
+    border: 2px solid rgb(182, 160, 233);
+    border-radius: 8px;
+    margin: 2em;
+    padding: 2em;
+    background-color: rgb(233 239 246);
+    
+
+}
+
+.submit{
+	transition-duration: 0.4s;
+	
+}
+
+.submit:hover{
+	background-color: #C8C6C6;
+	color: black;
+	border-radius: 8px;
+}
+
+.card h3{
+    text-align: center;
+    margin-top: 0em;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}

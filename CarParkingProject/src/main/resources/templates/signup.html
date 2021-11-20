@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" th:href="@{/css/signup.css}">
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+</head>
+
+<body>
+    <div class="page">
+        <div th:insert="base::layout"></div>
+
+        <div class="card-holder">
+            <div class="card">
+                <h3>
+                    Sign up
+                </h3>
+				
+                <form class="form" th:action="@{/registered}" method="post" th:object="${user}">
+                    <label for="firstname">First Name:</label>
+                    <input type="text" id="firstname" name="firstName" th:value=${user.firstName}>
+					
+					<label for="lastname">Last Name:</label>
+                    <input type="text" id="lastname" name="lastName" th:value=${user.lastName}>
+					
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="userName" th:value=${user.userName}>
+
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" th:value=${user.password}>
+					
+					<label for="confirmpassword">Confirm Password:</label>
+                    <input type="password" id="confirmpassword" name="confirmPass" th:value=${user.confirmPass}>
+                    
+                    <label for="address">Address:</label>
+                    <input type="text" id="address" name="address" th:value=${user.address}>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" th:value=${user.email}>
+					
+                    <label for="phone">Mobile Number:</label>
+                    <input type="number" id="phone" name="mobileNumber" th:value=${user.mobileNumber}>
+					
+                    <label for="carregisnumber">Car Registration Number:</label>
+                    <input type="text" id="carregisnumber" name="carRegisNumber" th:value=${user.carRegisNumber}>
+                    
+                	<div th:if="${otpbool}">
+                		<label for="otp">Enter OTP sent:</label>
+                    	<input type="password" id="otp" name="otp">	
+                	</div>
+                    
+                    <input id="submit" type="submit" value="Create Account">
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
