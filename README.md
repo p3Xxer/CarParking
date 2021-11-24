@@ -9,7 +9,7 @@
 ## To Pull (In the start)
 ### git pull
 
-## To create a new Branck
+## To create a new Branch
 ### git pull
 ### git branch xyz(branch name)
 ### git checkout xyz
