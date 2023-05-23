@@ -1,5 +1,4 @@
 # Car Parking Management
 
-The project manages the functioning of a gym or workout and exercise facility. The information included in this project consists of the profiling of members, the list of available services, payment transactions consisting of the membership fees and other additional features, and a list of the available trainers that will guide the users in their workout.
-The members can avail a service based on their needs from the list of available services. The instructor/gym trainer will be assigned to customers based on their requirements and charged extra accordingly. The gym will also have a manager to manage the overall functioning of the gym.
-
+Nowadays while traveling to a new place or traveling for shopping or traveling to crowded places the main problem people face is where to park their four-wheeler safely. So assume there is a company Car Parking Solutions which came up with an idea to solve this problem by booking the parking slots beforehand while traveling to the concerned place. They also have workers who provide additional benefits to users who park their four-wheelers in their parking slots by dry cleaning, car-washing and also do check for any repairs in the concerned parking time.
+They need you to create a beautiful online car parking slot booking web application. This application should enable the users to book the parking slot beforehand while traveling to any shopping malls, tourist spots, markets, pilgrim centers especially crowded places. The following functionalities should be supported by the application.
