@@ -10,4 +10,5 @@ Car Parking Solutions, a company dedicated to addressing the challenge of findin
 7. User Feedback and Ratings: Users should be able to provide feedback and ratings for their parking experience, helping other users make informed decisions when booking parking slots.
 8. Customer Support: The application should offer customer support channels, such as live chat or a helpline, to assist users with any inquiries or issues they may encounter.
 9. User Profiles: Users should have personalized profiles where they can manage their booking history, preferences, and payment information.
+
 By incorporating these functionalities, the online car parking slot booking web application will provide a convenient and efficient solution for users seeking secure parking options in crowded locations, enhancing their overall travel experience.
